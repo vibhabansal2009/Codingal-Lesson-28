@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Calculations</title>
+</head>
+
+<body>
+     <p>Calculating Every Element In The Array With 10 :</p>
+     <p id="product_value"></p>
+     <p id="difference_value"></p>
+    <p id="sum_value"></p>
+    <p id="quotient_value"></p>
+     
+    
+    <script>
+       var numbers = [22, 32, 42, 52];
+
+       function myFunction(num) {
+        return num * 10;
+       }
+
+       var newarray = numbers.map(myFunction);
+
+       document.getElementById("product_value").innerHTML = newarray;
+
+       var numbers = [22, 32, 42, 52];
+
+        function myFunction2(num) {
+            return num - 10;
+        }
+
+        var newarray = numbers.map(myFunction2);
+
+        document.getElementById("difference_value").innerHTML = newarray;
+
+        var numbers = [22, 32, 42, 52];
+
+            function myFunction3(num) {
+                return num + 10;
+            }
+
+            var newarray = numbers.map(myFunction3);
+
+            document.getElementById("sum_value").innerHTML = newarray;
+
+            var numbers = [22, 32, 42, 52];
+
+                function myFunction4(num) {
+                    return num / 10;
+                }
+
+                var newarray = numbers.map(myFunction4);
+
+                document.getElementById("quotient_value").innerHTML = newarray;
+
+
+     </script>
+</body>
+
+</html>
